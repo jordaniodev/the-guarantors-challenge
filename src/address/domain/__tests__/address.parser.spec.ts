@@ -3,8 +3,6 @@ import { extractState,  extractStreetAndCity,  extractZip, parseAddress } from "
 
 describe('address.parser – unit tests', () => {
 
-  // ---------------- ZIP ----------------
-
   describe('extractZip', () => {
     it('should extract zip code', () => {
       expect(extractZip('DC 20500')).toBe('20500');
@@ -14,8 +12,6 @@ describe('address.parser – unit tests', () => {
       expect(extractZip('Washington DC')).toBeUndefined();
     });
   });
-
-  // ---------------- STATE ----------------
 
   describe('extractState', () => {
     it('should extract state short and long name', () => {
@@ -42,8 +38,6 @@ describe('address.parser – unit tests', () => {
       expect(result.shortName).toBe('');
     });
   });
-
-  // ---------------- STREET + CITY ----------------
 
   describe('extractStreetAndCity', () => {
     it('should extract number, street and city', () => {
@@ -75,8 +69,6 @@ describe('address.parser – unit tests', () => {
       expect(result.city).toBeUndefined();
     });
   });
-
-  // ---------------- FULL PARSER ----------------
 
   describe('parseAddress', () => {
     it('should parse full address correctly', () => {
