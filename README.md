@@ -90,7 +90,7 @@ All final design decisions, trade-offs, and implementations were made consciousl
 
 The project includes comprehensive automated tests:
 
-- **Domain unit tests**  
+- **Domain unit tests (100% func coveraged)**  
   Validate normalization, parsing, and validation logic in isolation.
 
 - **Service tests**  
@@ -98,6 +98,9 @@ The project includes comprehensive automated tests:
 
 - **Controller tests**  
   Exercise the API through HTTP requests, including DTO validation and error responses.
+
+- **e2e tests**  
+  Validate all de workflow with e2e tests.
 
 Coverage intentionally excludes NestJS bootstrap and module wiring files, focusing on business logic and behavior.
 
