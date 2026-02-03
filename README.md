@@ -124,7 +124,7 @@ npm run start
 
 ### The API will be available at:
 ```bash
-POST /validate-address
+POST /address/validate
 ```
 
 ### Example request:
